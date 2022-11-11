@@ -19,4 +19,4 @@ function playback(){
     playSound.start(ctx.currentTime);
 }
 
-window.addEventListener("mousedown", playback);
+window.addEventListener("click", playback);
