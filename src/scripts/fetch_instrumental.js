@@ -38,7 +38,7 @@ class FetchInstrumental {
         
         let context = new AudioContext();
 
-        this.audioBufferCreate(context, audio);
+        this.audioBufferCreate(context, song);
 
         const source = context.createMediaElementSource(audio);
         source.connect(context.destination);
@@ -47,9 +47,9 @@ class FetchInstrumental {
 
         }
     
-    audioBufferCreate(context, audio){
+    audioBufferCreate(context, song){
         let bpmBox = document.getElementById("instrumentalBPM");
-        new Frequency(context, bpmBox, audio);
+        new Frequency(context, bpmBox, song);
     }
     // this.ele.children[0].innerText = "Ouch!";
 }
