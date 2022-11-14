@@ -8,22 +8,22 @@ class FetchAudio {
         //     this.ele.addEventListener("change", this.loadSong.bind(this.ele[i]))
         // }
         
-        this.ele.addEventListener("change", this.fetchSong.bind(this));
+        this.ele.addEventListener("change", this.setSong.bind(this));
 
     }
 
-    fetchSong(ele){
+    setSong(ele){
 
         let song = ele.target.value;
 
-        let context = new AudioContext();
-
         let audio = new Audio(`instrumentals/${song}.mp3`);
+        
+        let context = new AudioContext();
 
         const source = context.createMediaElementSource(audio);
         source.connect(context.destination);
 
-        audio.play();
+        return audio;
 
         // let audio;
 

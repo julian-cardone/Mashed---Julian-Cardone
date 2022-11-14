@@ -1,5 +1,7 @@
 // import { construct } from "core-js/fn/reflect";
 
+import FetchAudio from "./fetch_audio";
+
 
 class PlaybackButton{
 
@@ -7,6 +9,7 @@ class PlaybackButton{
         this.ele = ele;
         this.ele.addEventListener("click", this.changePlayback.bind(this));
     }
+
 
     changePlayback(){
 
@@ -16,13 +19,13 @@ class PlaybackButton{
 
         state === "paused" ? this.ele.setAttribute("data-playing", "playing") : this.ele.setAttribute("data-playing", "paused");
         
-        this.playFunc();
+        this.playFunc(audio);
     }
 
-    playFunc(){
+    playFunc(audio){
 
         // console.log('working!');
-        this.changePlayback() === "paused" ? audioElement.play : audioElement.pause;
+        this.changePlayback() === "paused" ? audio.play : audio.pause;
     }
 }
 
