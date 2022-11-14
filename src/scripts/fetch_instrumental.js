@@ -42,8 +42,15 @@ class FetchInstrumental {
         source.connect(context.destination);
 
         this.audio = audio;
+
+        this.frequencyCreate(context);
+
         }
     
+    frequencyCreate(context){
+        let bpmBox = getElementById("instrumentalBPM");
+        new Frequency(context, bpmBox);
+    }
     // this.ele.children[0].innerText = "Ouch!";
 }
 
