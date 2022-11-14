@@ -16,9 +16,10 @@
     <select class="instrumentals">
       <option selected disabled hidden>Select Instrumental</option>
       <option value="levels"></optionname>Levels - Avicii</option>
-      <option value="tgif"></optionname>Last Friday Night - Katy Perry</option>
+      <option value="tgif"data-bpm="126"></optionname>Last Friday Night - Katy Perry</option>
     </select>
-    <input type="text"id="instrumentalBPM"value="1">
+    <input type="range"id="instrumentalBPM"min="25"max="200"value="">
+    <label for="instrumentalBPM"id="instrumentalLabel"></label>
   </body>
   <div>
     <button id="play/pause_vocals"data-playing="paused">Play/Pause</button>

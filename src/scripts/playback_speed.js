@@ -1,23 +1,33 @@
 class Frequency{
 
-    constructor(bpmBox, audio){
-        this.bpmBox = bpmBox;
+    constructor(bpmSlider, audio, song){
+        this.bpmSlider = bpmSlider;
         this.audio = audio;
+        this.song = song;
         //set interval or timeout thing for typing in the box, with play/pause as the disruptor. 
-        // this.fillBox(this.context, this.bpmBox);
-        this.setSpeed(this.bpmBox, this.audio);
+        // this.fillBox(this.context, this.bpmSlider);
+        this.bpmLabel = document.getElementById("instrumentalLabel");
+        this.bpmLabel.innerHTML = bpmSlider.value;
+        this.bpmSlider.addEventListener("change", this.setSpeed.bind(this));
+
         // this.createAudioBufferSourceNode(this.context);
     }
 
-    // fillBox(context, bpmBox){
+    // fillBox(context, bpmSlider){
         
     // }
 
-    setSpeed(bpmBox, audio){
+    setSpeed(){
 
-        audio.playbackRate = bpmBox.value;
-        // console.log(song.playbackRate);
+        this.bpmLabel.innerHTML = this.bpmSlider.value;
 
+    }
+
+    bpmConversion(){
+        let bpm;
+
+
+        
     }
 
 //     createAudioBufferSourceNode(context, audio){
