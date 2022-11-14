@@ -24,6 +24,8 @@ class FetchInstrumental {
 
     }
 
+    //dont make it 'playing' when selecting play/pause on the placeholder
+
     setSong(ele){
 
         //selecting play/pause on 'select isntrumental' will make it be paused so that when you select a song it begins in the paused state
@@ -33,6 +35,9 @@ class FetchInstrumental {
             this.play.setAttribute("data-playing", "paused");
         }
 
+        let obj = event.target[event.target.selectedIndex];
+        //this is great to know!!^^
+
         let audio = new Audio(`instrumentals/${ele.target.value}.mp3`);
         
         let context = new AudioContext();
@@ -41,18 +46,11 @@ class FetchInstrumental {
         source.connect(context.destination);
         
         this.audio = audio;
+
+        new Frequency(this.audio, obj);
         
-        this.setSpeedHere(this.audio, ele);
         }
     
-    setSpeedHere(audio, ele){
-        // let bpmSlider = document.getElementById("instrumentalBPM");
-        // bpmSlider.value = ele.target.getAttribute("data-bpm");
-        // let sliderLabel = document.getElementById("instrumentalLabel");
-        // sliderLabel.innerHTML = bpmSlider.value;
-        // debugger
-        new Frequency(audio, ele);
-    }
     // this.ele.children[0].innerText = "Ouch!";
 }
 

@@ -1,11 +1,12 @@
 class Frequency{
 
-    constructor(audio, song){
+    constructor(audio, obj){
         this.bpmSlider = document.getElementById("instrumentalBPM");
-        this.bpmSlider.value = song.target.getAttribute("data-bpm");
-        debugger
+        this.obj = obj;
+        this.bpmSlider.value = this.obj.getAttribute("data-bpm");
+        // debugger
         this.audio = audio;
-        this.song = song;
+        // this.song = song;
         //set interval or timeout thing for typing in the box, with play/pause as the disruptor. 
         // this.fillBox(this.context, this.bpmSlider);
         this.bpmLabel = document.getElementById("instrumentalLabel");
@@ -34,7 +35,9 @@ class Frequency{
 
     bpmConversion(bpm){
 
-        
+        let rate = bpm / parseInt(this.obj.getAttribute("data-bpm"));
+
+        return rate;
         
     }
 
