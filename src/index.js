@@ -1,5 +1,6 @@
 // const { default: PlaybackButton } = require("./scripts/play_button.js");
-const { default: FetchAudio } = require("./scripts/fetch_audio.js");
+const { default: FetchInstrumental } = require("./scripts/fetch_instrumental.js");
+const { default: FetchVocal } = require("./scripts/fetch_vocal.js");
 
 // document.addEventListener("DOMContentLoaded", ()=>{
 //     const playing = document.getElementById("play/pause");
@@ -9,6 +10,13 @@ const { default: FetchAudio } = require("./scripts/fetch_audio.js");
 document.addEventListener("DOMContentLoaded", ()=>{
     const instrumental = document.querySelector(".instrumentals");
     const playing = document.getElementById("play/pause");
-    new FetchAudio(instrumental, playing);
+    new FetchInstrumental(instrumental, playing);
+    // console.log(instrumental);
+})
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    const instrumental = document.querySelector(".vocals");
+    const playing = document.getElementById("play/pause_vocals");
+    new FetchVocal(instrumental, playing);
     // console.log(instrumental);
 })
