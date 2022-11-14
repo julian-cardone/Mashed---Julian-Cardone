@@ -30,19 +30,24 @@ class FetchVocal {
             this.play.setAttribute("data-playing", "paused");
         }
 
-        let song = ele.target.value;
+        let obj = event.target[event.target.selectedIndex];
+        //this is great to know!!^^
 
-        let audio = new Audio(`vocals/${song}.mp3`);
+        let audio = new Audio(`vocals/${ele.target.value}.mp3`);
         
         let context = new AudioContext();
-
+        
         const source = context.createMediaElementSource(audio);
         source.connect(context.destination);
-
+        
         this.audio = audio;
+
+        new VocalSpeed(this.audio, obj);
+        
         }
     
     // this.ele.children[0].innerText = "Ouch!";
 }
 
 export default FetchVocal;
+import VocalSpeed from "./playback_speed_voc";

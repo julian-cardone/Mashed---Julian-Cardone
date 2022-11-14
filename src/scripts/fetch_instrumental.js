@@ -55,7 +55,7 @@ class FetchInstrumental {
 }
 
 export default FetchInstrumental;
-import Frequency from "./playback_speed";
+import Frequency from "./playback_speed_inst";
 
 
 // class AudioFetch {
