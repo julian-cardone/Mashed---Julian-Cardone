@@ -14,6 +14,7 @@ class FetchInstrumental {
         let state = this.play.getAttribute("data-playing");
 
         if (state === "paused"){
+            this.setSpeedHere(this.audio);
             this.play.setAttribute("data-playing", "playing")
             this.audio.play()
         } else{
@@ -37,25 +38,24 @@ class FetchInstrumental {
         let audio = new Audio(`instrumentals/${song}.mp3`);
         
         let context = new AudioContext();
-
-        this.audioBufferCreate(context, song);
-
+        
         const source = context.createMediaElementSource(audio);
         source.connect(context.destination);
-
+        
+        this.setSpeedHere(audio);
+        
         this.audio = audio;
-
         }
     
-    audioBufferCreate(context, song){
+    setSpeedHere(audio){
         let bpmBox = document.getElementById("instrumentalBPM");
-        new Frequency(context, bpmBox, song);
+        new Frequency(bpmBox, audio);
     }
     // this.ele.children[0].innerText = "Ouch!";
 }
 
 export default FetchInstrumental;
-import Frequency from "./frequency";
+import Frequency from "./playback_speed";
 
 
 // class AudioFetch {
