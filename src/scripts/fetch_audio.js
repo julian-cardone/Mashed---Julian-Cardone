@@ -1,18 +1,34 @@
+// import PlaybackButton from "./play_button";
 
 class FetchAudio {
-    constructor(ele){
-        this.ele = ele;
+    constructor(select, play){
+        this.select = select;
+        this.play = play;
+        this.audio;
+        this.select.addEventListener("change", this.setSong.bind(this));
+        this.play.addEventListener("click", this.playFunc.bind(this));
+    }
 
-        // for (let i = 1; i < this.ele.length; i++){
-        //     console.log(this.ele[i]);
-        //     this.ele.addEventListener("change", this.loadSong.bind(this.ele[i]))
-        // }
-        
-        this.ele.addEventListener("change", this.setSong.bind(this));
+    playFunc(){
+
+        let state = this.play.getAttribute("data-playing");
+
+        if (state === "paused"){
+            this.play.setAttribute("data-playing", "playing")
+            this.audio.play()
+        } else{
+            this.play.setAttribute("data-playing", "paused");
+            this.audio.pause();
+        }
 
     }
 
     setSong(ele){
+
+        if (this.audio){
+            this.audio.pause();
+            this.play.setAttribute("data-playing", "paused");
+        }
 
         let song = ele.target.value;
 
@@ -23,21 +39,11 @@ class FetchAudio {
         const source = context.createMediaElementSource(audio);
         source.connect(context.destination);
 
-        return audio;
-
-        // let audio;
-
-        // fetch(`instrumentals/${song}.mp3`)
-        //     .then(audioData => audioData.arrayBuffer())
-        //     .then(buffered => context.decodeAudioData(buffered))
-        //     .then(buffered => audio = buffered)
-
-        //     console.log(audio);
+        this.audio = audio;
         }
-    }
     
     // this.ele.children[0].innerText = "Ouch!";
-    
+}
 
 export default FetchAudio;
 
@@ -75,3 +81,12 @@ export default FetchAudio;
 //         this.ele.innerHTML = "<h2>playing...</h2>"
 //     }
 // }
+
+        // let audio;
+
+        // fetch(`instrumentals/${song}.mp3`)
+        //     .then(audioData => audioData.arrayBuffer())
+        //     .then(buffered => context.decodeAudioData(buffered))
+        //     .then(buffered => audio = buffered)
+
+        //     console.log(audio);
