@@ -10,7 +10,11 @@
     <title>Mashed</title>
   </head>
 
-  <body>
+  <div class="header">
+    <h1>My Header</h1>
+  </div>
+
+  <div class="instrumentalDiv">
     <!-- <audio src="src/scripts/instrumentals/levels.mp3"></audio> -->
     <button id="play/pause"data-playing="paused">Play/Pause</button>
     <select class="instrumentals">
@@ -20,10 +24,10 @@
     </select>
     <input type="range"id="instrumentalBPM"min="50"max="300"value="">
     <label for="instrumentalBPM"id="instrumentalLabel"></label>
-  </body>
+  </div>
 
 
-  <div>
+  <div class="vocalDiv">
     <button id="play/pause_vocals"data-playing="paused">Play/Pause</button>
     <select class="vocals">
       <option selected disabled hidden>Select Vocal</option>
