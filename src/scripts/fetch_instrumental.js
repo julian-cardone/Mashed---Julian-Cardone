@@ -49,6 +49,7 @@ class FetchInstrumental {
     setSpeedHere(audio, ele){
         let bpmSlider = document.getElementById("instrumentalBPM");
         bpmSlider.value = ele.target.getAttribute("data-bpm");
+        // debugger
         new Frequency(bpmSlider, audio, ele);
     }
     // this.ele.children[0].innerText = "Ouch!";
