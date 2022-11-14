@@ -38,23 +38,24 @@ class FetchInstrumental {
         
         let context = new AudioContext();
 
+        this.audioBufferCreate(context, audio);
+
         const source = context.createMediaElementSource(audio);
         source.connect(context.destination);
 
         this.audio = audio;
 
-        this.frequencyCreate(context);
-
         }
     
-    frequencyCreate(context){
-        let bpmBox = getElementById("instrumentalBPM");
-        new Frequency(context, bpmBox);
+    audioBufferCreate(context, audio){
+        let bpmBox = document.getElementById("instrumentalBPM");
+        new Frequency(context, bpmBox, audio);
     }
     // this.ele.children[0].innerText = "Ouch!";
 }
 
 export default FetchInstrumental;
+import Frequency from "./frequency";
 
 
 // class AudioFetch {
