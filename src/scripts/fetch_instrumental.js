@@ -40,17 +40,18 @@ class FetchInstrumental {
         const source = context.createMediaElementSource(audio);
         source.connect(context.destination);
         
-        this.setSpeedHere(audio, ele);
-        
         this.audio = audio;
-
+        
+        this.setSpeedHere(this.audio, ele);
         }
     
     setSpeedHere(audio, ele){
-        let bpmSlider = document.getElementById("instrumentalBPM");
-        bpmSlider.value = ele.target.getAttribute("data-bpm");
+        // let bpmSlider = document.getElementById("instrumentalBPM");
+        // bpmSlider.value = ele.target.getAttribute("data-bpm");
+        // let sliderLabel = document.getElementById("instrumentalLabel");
+        // sliderLabel.innerHTML = bpmSlider.value;
         // debugger
-        new Frequency(bpmSlider, audio, ele);
+        new Frequency(audio, ele);
     }
     // this.ele.children[0].innerText = "Ouch!";
 }

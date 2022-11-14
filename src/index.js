@@ -20,3 +20,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
     new FetchVocal(instrumental, playing);
     // console.log(instrumental);
 })
+
