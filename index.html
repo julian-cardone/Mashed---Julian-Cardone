@@ -16,7 +16,16 @@
   </div>
 
   <div class ="middle">
-<h1>div</h1>
+    <select class="instrumentals">
+      <option selected disabled hidden>Select Instrumental</option>
+      <option data-bpm="123"value="levels">Levels - Avicii</option>
+      <option data-bpm="123"value="tgif">Last Friday Night - Katy Perry</option>
+    </select>
+
+    <select class="vocals">
+      <option selected disabled hidden>Select Vocal</option>
+      <option data-bpm="117"value="nohands">No Hands - Waka Flocka Flame</option>
+    </select>
   </div>
 
   <div class="footer">
@@ -25,11 +34,6 @@
     <input type="range"id="instrumentalBPM"min="50"max="300"value="">
     <label for="instrumentalBPM"id="instrumentalLabel"></label>
     <button id="play/pause"data-playing="paused">Play/Pause</button>
-    <select class="instrumentals">
-      <option selected disabled hidden>Select Instrumental</option>
-      <option data-bpm="123"value="levels">Levels - Avicii</option>
-      <option data-bpm="123"value="tgif">Last Friday Night - Katy Perry</option>
-    </select>
   </div>
 
 
@@ -37,10 +41,6 @@
     <input type="range"id="vocalBPM"min="50"max="300"value="">
     <label for="vocalBPM"id="vocalLabel"></label>
     <button id="play/pause_vocals"data-playing="paused">Play/Pause</button>
-    <select class="vocals">
-      <option selected disabled hidden>Select Vocal</option>
-      <option data-bpm="117"value="nohands">No Hands - Waka Flocka Flame</option>
-    </select>
   </div>
 </div>
 
