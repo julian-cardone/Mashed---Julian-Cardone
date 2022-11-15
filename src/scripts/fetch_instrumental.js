@@ -7,6 +7,7 @@ class FetchInstrumental {
         this.audio;
         this.select.addEventListener("change", this.setSong.bind(this));
         this.play.addEventListener("click", this.playFunc.bind(this));
+        // this.footer = document.querySelector(".footer");
     }
 
     playFunc(){
@@ -18,11 +19,13 @@ class FetchInstrumental {
             this.play.setAttribute("data-playing", "playing")
             this.play.innerHTML = "◼";
             this.play.style.padding = "0% 0.6% 0% 0.5%";
+            // this.footer.style.opacity = "0.5";
             this.audio.play()
         } else{
             this.play.setAttribute("data-playing", "paused");
             this.audio.pause();
             this.play.innerHTML = "▶";
+            // this.footer.style.opacity = "1";
         }
 
     }

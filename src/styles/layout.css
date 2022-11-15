@@ -28,6 +28,7 @@
     position: absolute;
     width: 100%;
     bottom: 0;
+    opacity: 1;
     /* background-color: gray; */
 }
 
@@ -67,7 +68,7 @@
 #instrumentalBPM::-webkit-slider-thumb{
     -webkit-appearance: none;
     appearance: none;
-    background: black;
+    background: rgb(97, 12, 12);
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -90,6 +91,7 @@
     left: 5%;
     font-family: "Trebuchet MS", "sans-serif";
     font-weight: bold;
+    color: black;
 }
 
 #vocalBPM {
@@ -111,6 +113,7 @@
     right: 5%;
     font-family: "Trebuchet MS", "sans-serif";
     font-weight: bold;
+    color: black;
 }
 
 /* be able to change by mouse scroll ^^^^^ */
@@ -118,7 +121,7 @@
 #vocalBPM::-webkit-slider-thumb{
     -webkit-appearance: none;
     appearance: none;
-    background: black;
+    background: rgb(97, 12, 12);
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -145,7 +148,7 @@
     width: 100%;
     position: absolute; top: auto; left: 0;
     /* opacity: 0.8; */
-    background-color: gray;
+    background: gray;
 }
 
 #play\/pause_vocals{

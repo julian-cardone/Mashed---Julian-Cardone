@@ -25,6 +25,7 @@
     <select class="vocals">
       <option selected disabled hidden>Select Vocal</option>
       <option data-bpm="117"value="nohands">No Hands - Waka Flocka Flame</option>
+      <option data-bpm="136"value="sideline">Sideline Watching - Lil Uzi</option>
     </select>
 
     <button class="playboth">Play Both!</button>
@@ -34,7 +35,7 @@
   <div class="instrumentalDiv">
     <!-- <audio src="src/scripts/instrumentals/levels.mp3"></audio> -->
     <label for="instrumentalBPM"id="instrumentalLabel"></label>
-    <input type="range"id="instrumentalBPM"min="50"max="300"value="">
+    <input type="range"id="instrumentalBPM"min="50"max="300"value=""step="0.5">
     <button id="play/pause"data-playing="paused">▶</button>
   </div>
 
