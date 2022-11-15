@@ -13,9 +13,12 @@ class FetchVocal {
 
         if (state === "paused"){
             this.play.setAttribute("data-playing", "playing")
+            this.play.innerHTML = "◼";
+            this.play.style.padding = "0% 0.6% 0% 0.5%";
             this.audio.play()
         } else{
             this.play.setAttribute("data-playing", "paused");
+            this.play.innerHTML = "▶";
             this.audio.pause();
         }
 

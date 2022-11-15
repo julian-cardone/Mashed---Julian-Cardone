@@ -16,10 +16,13 @@ class FetchInstrumental {
         if (state === "paused"){
             // this.setSpeedHere(this.audio);
             this.play.setAttribute("data-playing", "playing")
+            this.play.innerHTML = "◼";
+            this.play.style.padding = "0% 0.6% 0% 0.5%";
             this.audio.play()
         } else{
             this.play.setAttribute("data-playing", "paused");
             this.audio.pause();
+            this.play.innerHTML = "▶";
         }
 
     }
