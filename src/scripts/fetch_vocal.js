@@ -1,4 +1,4 @@
-class FetchVocal {
+class FetchVocal{
     constructor(select, play){
         this.select = select;
         this.play = play;
@@ -54,3 +54,4 @@ class FetchVocal {
 
 export default FetchVocal;
 import VocalSpeed from "./playback_speed_voc";
+import PlayBoth from "./play_both";

@@ -1,13 +1,15 @@
 class PlayBoth{
 
-    constructor(playBoth){
+    constructor(playBoth, inst, voc){
         this.playBoth = playBoth;
+        this.inst = inst;
+        this.voc = voc;
         this.playBoth.addEventListener("click", this.playBothNow.bind(this));
     }
 
     playBothNow(){
-        FetchInstrumental.playFunc();
-        FetchVocal.playFunc();
+        this.inst.playFunc();
+        this.voc.playFunc();
     }
 }
 

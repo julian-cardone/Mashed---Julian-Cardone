@@ -35,7 +35,7 @@ class Frequency{
 
     bpmConversion(bpm){
 
-        let rate = bpm / parseInt(this.obj.getAttribute("data-bpm"));
+        let rate = (bpm*1.0) / (parseInt(this.obj.getAttribute("data-bpm"))*1.0);
 
         return rate;
         

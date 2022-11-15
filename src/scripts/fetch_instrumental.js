@@ -1,6 +1,6 @@
 // import PlaybackButton from "./play_button";
 
-class FetchInstrumental {
+class FetchInstrumental{
     constructor(select, play){
         this.select = select;
         this.play = play;
@@ -62,6 +62,7 @@ class FetchInstrumental {
 
 export default FetchInstrumental;
 import Frequency from "./playback_speed_inst";
+import PlayBoth from "./play_both";
 
 
 // class AudioFetch {

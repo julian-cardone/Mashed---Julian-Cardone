@@ -18,14 +18,14 @@
   <div class ="middle">
     <select class="instrumentals">
       <option selected disabled hidden>Select Instrumental</option>
-      <option data-bpm="123"value="levels">Levels - Avicii</option>
-      <option data-bpm="123"value="tgif">Last Friday Night - Katy Perry</option>
+      <option data-bpm="123.0"value="levels">Levels - Avicii</option>
+      <option data-bpm="123.0"value="tgif">Last Friday Night - Katy Perry</option>
     </select>
 
     <select class="vocals">
       <option selected disabled hidden>Select Vocal</option>
-      <option data-bpm="117"value="nohands">No Hands - Waka Flocka Flame</option>
-      <option data-bpm="136"value="sideline">Sideline Watching - Lil Uzi</option>
+      <option data-bpm="117.0"value="nohands">No Hands - Waka Flocka Flame</option>
+      <option data-bpm="131.0"value="sideline">Sideline Watching - Lil Uzi</option>
     </select>
 
     <button class="playboth">Play Both!</button>
@@ -42,7 +42,7 @@
 
   <div class="vocalDiv">
     <label for="vocalBPM"id="vocalLabel"></label>
-    <input type="range"id="vocalBPM"min="50"max="300"value="">
+    <input type="range"id="vocalBPM"min="50"max="300"value=""step="0.5">
     <button id="play/pause_vocals"data-playing="paused">▶</button>
   </div>
 </div>
