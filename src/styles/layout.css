@@ -46,15 +46,36 @@
     bottom: 0px;
     /* position: absolute; */
     float: right;
-    margin: 20px;
+    margin: 10px;
+    align-items: center;
 }
 
 #instrumentalBPM {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* be able to change by mouse scroll ^^^^^ */
+
+#vocalBPM {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #play\/pause {
     margin: 10px;
 }
 
+.middle{
+    /* margin: 0px; */
+    height: 88%;
+    width: 100%;
+    position: absolute; top: auto; left: 0;
+}
+
+#play\/pause_vocals{
+    margin: 10px;
+}
 
