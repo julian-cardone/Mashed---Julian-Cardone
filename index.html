@@ -15,16 +15,21 @@
     <h1>Mashed</h1>
   </div>
 
+  <div class ="middle">
+
+  </div>
+
+  <div class="footer">
   <div class="instrumentalDiv">
     <!-- <audio src="src/scripts/instrumentals/levels.mp3"></audio> -->
+    <input type="range"id="instrumentalBPM"min="50"max="300"value="">
+    <label for="instrumentalBPM"id="instrumentalLabel"></label>
     <button id="play/pause"data-playing="paused">Play/Pause</button>
     <select class="instrumentals">
       <option selected disabled hidden>Select Instrumental</option>
       <option data-bpm="123"value="levels">Levels - Avicii</option>
       <option data-bpm="123"value="tgif">Last Friday Night - Katy Perry</option>
     </select>
-    <input type="range"id="instrumentalBPM"min="50"max="300"value="">
-    <label for="instrumentalBPM"id="instrumentalLabel"></label>
   </div>
 
 
@@ -37,5 +42,6 @@
     <input type="range"id="vocalBPM"min="50"max="300"value="">
     <label for="vocalBPM"id="vocalLabel"></label>
   </div>
+</div>
 
 </html>

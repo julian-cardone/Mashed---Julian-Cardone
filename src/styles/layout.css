@@ -14,8 +14,47 @@
     font-family: "Brush Script MT", "sans-serif";
 }
 
+/* middle div */
+
+.middle {
+    position: relative;
+    margin: 0;
+}
+
+/* footer  */
+
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
 /* instrumental div  */
 
 .instrumentalDiv {
+    /* display: block; */
+    float: left;
+    bottom: 0px;
+    /* position: absolute; */
+    margin: 10px;
+    align-items: center;
+}
+
+/* vocal div */
+.vocalDiv{
+    /* display: block; */
+    bottom: 0px;
+    /* position: absolute; */
+    float: right;
+    margin: 20px;
+}
+
+#instrumentalBPM {
     display: block;
 }
+
+#play\/pause {
+    margin: 10px;
+}
+
+
