@@ -76,6 +76,7 @@
     width: 100%;
     position: absolute; top: auto; left: 0;
     /* opacity: 0.8; */
+    background-color: gray;
 }
 
 #play\/pause_vocals{
@@ -104,18 +105,30 @@
     box-shadow: 2px 2px lightgray;
 }
 
-.instrumentals > option{
-    background-color: transparent;
+select > option{
+    background-color: gray;
 }
 
 .vocals{
     position: absolute;
     align-items: center;
     display: block;
-    right: 15%;
+    right: 10%;
     top: 2%;
-    width: 20%;
-    border-radius: 3%;
+    width: 25%;
+    border-radius: 20px;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    opacity: 0.8;
+    background-color: black;
+    border-color: lightgrey;
+    border-width: 1px;
+    font-family: "Trebuchet MS", "sans-serif";
+    font-weight: bold;
+    text-align: center;
+    color: bisque;
+    -webkit-appearance: none;
+    box-shadow: 2px 2px lightgray;
 }
 
 
