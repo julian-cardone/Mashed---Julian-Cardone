@@ -53,16 +53,76 @@
 }
 
 #instrumentalBPM {
-    display: block;
     position: absolute;
+    align-items: center;
+    display: block;
+    bottom: 250%;
+    left: 5%;
+    width: 35%;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    height: 35%;
+}
+
+#instrumentalBPM::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* #instrumentalBPM::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    appearance: none;
+    background: lightgray;
+    width: 5px;
+    height: 10px;
+    cursor: pointer;
+} */
+
+#instrumentalLabel {
+    position: absolute;
+    display: block;
+    bottom: 100%;
+    left: 5%;
+    font-family: "Trebuchet MS", "sans-serif";
+    font-weight: bold;
+}
+
+#vocalBPM {
+    position: absolute;
+    align-items: center;
+    display: block;
+    bottom: 250%;
+    right: 5%;
+    width: 35%;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    height: 35%;
+}
+
+#vocalLabel {
+    position: absolute;
+    display: block;
+    bottom: 100%;
+    right: 5%;
+    font-family: "Trebuchet MS", "sans-serif";
+    font-weight: bold;
 }
 
 /* be able to change by mouse scroll ^^^^^ */
 
-#vocalBPM {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#vocalBPM::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 #play\/pause {
@@ -121,7 +181,7 @@
     text-align: center;
     color: bisque;
     -webkit-appearance: none;
-    box-shadow: 2px 2px lightgray;
+    box-shadow: 2px 2px 1px lightgray;
 }
 
 select > option{
@@ -147,7 +207,21 @@ select > option{
     text-align: center;
     color: bisque;
     -webkit-appearance: none;
-    box-shadow: 2px 2px lightgray;
+    box-shadow: 2px 2px 1px lightgray;
+}
+
+.playboth{
+    position: absolute;
+    align-items: center;
+    left: 45%;
+    top: 8%;
+    border-radius: 10px;
+    box-shadow: 1.5px 1.5px 1px rgb(44, 44, 44);
+    background-color: lightgray;
+    padding: 4px, 10px, 4px, 10px;
+    border-width: 2px;
+    font-family: "Trebuchet MS", "sans-serif";
+    font-weight: bold;
 }
 
 
