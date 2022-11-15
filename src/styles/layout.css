@@ -16,11 +16,11 @@
 
 /* middle div */
 
-.middle {
+/* .middle {
     position: relative;
     margin: 0;
     background-color: gray;
-}
+} */
 
 /* footer  */
 
@@ -28,6 +28,7 @@
     position: absolute;
     width: 100%;
     bottom: 0;
+    /* background-color: gray; */
 }
 
 /* instrumental div  */
@@ -53,9 +54,7 @@
 
 #instrumentalBPM {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+    position: absolute;
 }
 
 /* be able to change by mouse scroll ^^^^^ */
@@ -67,7 +66,17 @@
 }
 
 #play\/pause {
-    margin: 10px;
+    /* margin: 10px; */
+    position: absolute;
+    align-items: center;
+    left: 21%;
+    background-color: rgb(165, 165, 165);
+    border-width: 2px;
+    border-radius: 35%;
+    font-size: 25px;
+    padding-left: 0.8%;
+    box-shadow: 1.5px 1.5px 1px rgb(44, 44, 44);
+    bottom: 15%;
 }
 
 .middle{
@@ -80,7 +89,17 @@
 }
 
 #play\/pause_vocals{
-    margin: 10px;
+    /* margin: 10px; */
+    position: absolute;
+    align-items: center;
+    bottom: 15%;
+    right: 21%;
+    background-color: rgb(165, 165, 165);
+    border-width: 2px;
+    border-radius: 35%;
+    font-size: 25px;
+    padding-left: 0.8%;
+    box-shadow: 1.5px 1.5px 1px rgb(44, 44, 44);
 }
 
 .instrumentals{
