@@ -30,6 +30,11 @@ class FetchInstrumental{
 
     }
 
+    isPlaying(){
+        let state = this.play.getAttribute("data-playing");
+        return (state === "paused");
+    }
+
     //dont make it 'playing' when selecting play/pause on the placeholder
 
     setSong(ele){
