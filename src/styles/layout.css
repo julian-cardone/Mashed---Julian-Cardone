@@ -1,17 +1,53 @@
 /* header */
 
 .header{
-    display: block;
-    margin: auto;
-    padding: 10px;
+    /* display: inline-block; */
+    /* margin: auto; */
+    /* padding: 10px; */
     background-color: black;
+    /* text-align: center; */
 }
 
 .header > h1{
-    text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     color: bisque;
     font-family: "Brush Script MT", "sans-serif";
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+}
+
+#linked{
+    position: fixed;
+    display: inline-block;
+    top: 10px;
+    left: 5px;
+}
+
+#linked > img{
+    height: 25px;
+    width: auto;
+    /* display: inline-block; */
+    /* float: right; */
+    /* display: block; */
+    /* float: left; */
+    /* right: 50%; */
+}
+
+#github{
+    position: fixed;
+    display: inline-block;
+    top: 10px;
+    left: 90px;
+}
+
+#github > img{
+    height: 25px;
+    width: auto;
+    /* float: right; */
+    /* display: inline-block; */
+    /* display: block; */
+    /* float: left; */
 }
 
 /* middle div */
@@ -226,5 +262,9 @@ select > option{
     font-family: "Trebuchet MS", "sans-serif";
     font-weight: bold;
 }
+
+/* .thumb{
+    background: white;
+} */
 
 

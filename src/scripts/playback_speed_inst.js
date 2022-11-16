@@ -12,8 +12,8 @@ class Frequency{
         this.bpmLabel = document.getElementById("instrumentalLabel");
         this.bpmLabel.innerHTML = this.bpmSlider.value;
         this.bpmSlider.addEventListener("change", this.setSpeed.bind(this));
-
         // this.createAudioBufferSourceNode(this.context);
+        // this.thumb = document.querySelector(".thumb");
     }
 
             // let bpmSlider = document.getElementById("instrumentalBPM");
@@ -26,6 +26,8 @@ class Frequency{
     // }
 
     setSpeed(){
+
+        // this.thumb.innerHTML = this.bpmSlider.value;
 
         this.bpmLabel.innerHTML = this.bpmSlider.value;
 
