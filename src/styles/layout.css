@@ -21,11 +21,11 @@
     position: fixed;
     display: inline-block;
     top: 10px;
-    left: 5px;
+    left: 6px;
 }
 
-#linked > img{
-    height: 25px;
+#linked img{
+    height: 35px;
     width: auto;
     /* display: inline-block; */
     /* float: right; */
@@ -37,12 +37,12 @@
 #github{
     position: fixed;
     display: inline-block;
-    top: 10px;
-    left: 90px;
+    left: 42px;
+    top: -1px;
 }
 
-#github > img{
-    height: 25px;
+#github img{
+    height: 56.5px;
     width: auto;
     /* float: right; */
     /* display: inline-block; */
@@ -99,6 +99,7 @@
     -webkit-appearance: none;
     border-radius: 5px;
     height: 35%;
+    box-shadow: 2px 2px 2px rgb(44, 44, 44);
 }
 
 #instrumentalBPM::-webkit-slider-thumb{
@@ -140,6 +141,7 @@
     -webkit-appearance: none;
     border-radius: 5px;
     height: 35%;
+    box-shadow: 2px 2px 2px rgb(44, 44, 44);
 }
 
 #vocalLabel {
@@ -220,7 +222,8 @@
     text-align: center;
     color: bisque;
     -webkit-appearance: none;
-    box-shadow: 2px 2px 1px lightgray;
+    /* box-shadow: 2px 2px 1px lightgray; */
+    box-shadow: 3px 3px 2px rgb(44, 44, 44);
 }
 
 select > option{
@@ -246,7 +249,7 @@ select > option{
     text-align: center;
     color: bisque;
     -webkit-appearance: none;
-    box-shadow: 2px 2px 1px lightgray;
+    box-shadow: 3px 3px 2px rgb(44, 44, 44);
 }
 
 .playboth{
