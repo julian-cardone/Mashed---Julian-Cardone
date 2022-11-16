@@ -26,6 +26,7 @@ class PlayBoth{
         if (!this.inst.isPlaying()){
             this.label.style.color = "bisque";
             this.vocLabel.style.color = "bisque";
+            this.playBoth.innerHTML = "Pause Both!"
             // debugger
             const id = setInterval(()=>{
             let newColors = this.randomizer(colors);
@@ -41,6 +42,7 @@ class PlayBoth{
             this.middle.style.background = "gray";
             this.label.style.color = "black";
             this.vocLabel.style.color = "black";
+            this.playBoth.innerHTML = "Play Both!"
         }
     }
 
