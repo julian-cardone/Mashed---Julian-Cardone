@@ -1,7 +1,11 @@
 // const { default: PlaybackButton } = require("./scripts/play_button.js");
+const { default: BeatMatch } = require("./scripts/beat_match_button.js");
 const { default: FetchInstrumental } = require("./scripts/fetch_instrumental.js");
 const { default: FetchVocal } = require("./scripts/fetch_vocal.js");
+const { default: Frequency } = require("./scripts/playback_speed_inst.js");
+const { default: VocalSpeed } = require("./scripts/playback_speed_voc.js");
 const { default: PlayBoth } = require("./scripts/play_both.js");
+// const { default: BeatMatch } = require("./scripts/beat_match_button.js");
 
 // document.addEventListener("DOMContentLoaded", ()=>{
 //     const playing = document.getElementById("play/pause");
@@ -20,6 +24,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     const playButton = document.querySelector(".playboth");
     new PlayBoth(playButton, inst, vol);
+
+    // const matchButton = document.querySelector(".matchButton");
+    // const instBpm = document.getElementById("instrumentalBPM");
+    // const vocBpm = document.getElementById("vocalBPM");
+    // new BeatMatch(matchButton, instBpm, vocBpm);
 })
 
 // document.addEventListener("DOMContentLoaded", ()=>{

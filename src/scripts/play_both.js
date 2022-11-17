@@ -39,7 +39,7 @@ class PlayBoth{
                     clearInterval(id);
                     this.middle.style.background = "gray";
                 }
-            }, (60/(this.instBPM.innerHTML))*1000)+25;
+            }, ((60/(this.instBPM.innerHTML))*1000)+20);
             // debugger
         } else {
             this.middle.style.background = "gray";

@@ -1,9 +1,10 @@
 class BeatMatch{
 
-    constructor(bmButton, playbackInst, playbackVoc){
+    constructor(bmButton, playbackInst, playbackVoc, freq){
         this.bmButton = bmButton;
         this.playbackInst = playbackInst;
         this.playbackVoc = playbackVoc;
+        this.freq = freq;
 
         // this.instObj = instObj;
         // this.vocObj = vocObj;
@@ -13,17 +14,22 @@ class BeatMatch{
         // this.bmButton.addEventListener("click", console.log("test"));
         this.bmButton.addEventListener("click", this.matchBeats.bind(this));
         // debugger;
+        // this.playbackVoc.addEventListener("change", this.freq.setSpeed.bind(this));
     }
 
     matchBeats(){
-        // debugger
-        if (this.playbackInst.value > this.playbackVoc.value){
-            this.playbackVoc.value = this.playbackInst.value;
-            this.playbackVoc.setSpeed();
-        } else {
-            this.playbackInst.value = this.playbackVoc.value;
-            this.playbackInst.setSpeed();
-        }
+        // this.playbackInst.value = this.playbackVoc.value;
+        // if (this.playbackInst.value > this.playbackVoc.value){
+        //     this.playbackVoc.value = this.playbackInst.value;
+        //     this.vocObj.setSpeed();
+        // } else {
+        //     this.playbackInst.value = this.playbackVoc.value;
+        //     this.instObj.setSpeed();
+        // }
+        setInterval(()=>{
+        this.playbackInst.value = this.playbackVoc.value;
+        this.freq.setSpeed();
+            }, 0.01);
     }
 
 }

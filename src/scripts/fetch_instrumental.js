@@ -58,7 +58,13 @@ class FetchInstrumental{
         
         this.audio = audio;
 
-        new Frequency(this.audio, obj);
+        const freq = new Frequency(this.audio, obj);
+
+        const matchButton = document.querySelector(".matchButton");
+        const instBpm = document.getElementById("instrumentalBPM");
+        const vocBpm = document.getElementById("vocalBPM");
+
+        new BeatMatch(matchButton, instBpm, vocBpm, freq);
         
         }
     
