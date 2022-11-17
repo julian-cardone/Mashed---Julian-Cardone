@@ -29,7 +29,7 @@ class Frequency{
     setSpeed(){
 
         // this.thumb.innerHTML = this.bpmSlider.value;
-
+        
         this.bpmLabel.innerHTML = this.bpmSlider.value;
 
         this.audio.playbackRate = this.bpmConversion(this.bpmSlider.value);
