@@ -1,15 +1,15 @@
-# JavaScript-Project---Julian-Cardone
+# Mashed - Julian Cardone
 
 Background:
-This project is a browser tool to mash up songs. The user may select one song from a list of instrumental audio tracks
-and another song from a list of acappella audio tracks of popular songs. Once selected, the user may edit the tracks by 
-tempo, pitch, and other variables. The final product is an overlay of the two tracks to create a 'mashup' of the two songs. 
+Mashed is a browser tool to mash up songs. The user may select one song from a list of instrumental audio tracks
+and another song from a list of acappella audio tracks of popular songs. Once selected, the user may change the tempo of one or both songs. The final product is an overlay of the two tracks to create a 'mashup' of the two songs. 
 
 
 Functionality & MVPs:
-In Mashed, users will be able to:
+In Mashed, users are able to:
 
 - select from a list of popular songs, instrumental
+    ![alt text](images/songs.png)
 - select from a list of popular songs, vocals
 - be able to edit each audio track in various ways
 - overlay the audio to create a mashup
@@ -26,7 +26,6 @@ Technologies, Libraries, APIs:
 The API and libraries I will use are:
 
 - Web Audio API
-- Tone.js
 
 
 Implementation Timeline:
