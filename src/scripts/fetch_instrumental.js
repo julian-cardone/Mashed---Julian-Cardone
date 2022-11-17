@@ -66,6 +66,7 @@ class FetchInstrumental{
 }
 
 export default FetchInstrumental;
+import BeatMatch from "./beat_match_button";
 import Frequency from "./playback_speed_inst";
 import PlayBoth from "./play_both";
 

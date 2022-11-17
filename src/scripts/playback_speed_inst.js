@@ -14,6 +14,7 @@ class Frequency{
         this.bpmSlider.addEventListener("change", this.setSpeed.bind(this));
         // this.createAudioBufferSourceNode(this.context);
         // this.thumb = document.querySelector(".thumb");
+        
     }
 
             // let bpmSlider = document.getElementById("instrumentalBPM");
