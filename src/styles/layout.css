@@ -50,6 +50,21 @@
     /* float: left; */
 }
 
+#instructions{
+    position: relative;
+    display: inline-flex;
+    left: 92%;
+    align-content: center;
+    top: -7%;
+    /* float: right; */
+    cursor: pointer;
+}
+
+#instructions p{
+    font-size: 20px;
+    color: bisque;
+}
+
 /* middle div */
 
 /* .middle {
@@ -178,6 +193,7 @@
     padding: 0% 0.6% 0% 0.5%;
     box-shadow: 1.5px 1.5px 1px rgb(44, 44, 44);
     bottom: 25%;
+    cursor: pointer;
 }
 
 .middle{
@@ -201,6 +217,7 @@
     font-size: 25px;
     padding: 0% 0.6% 0% 0.5%;
     box-shadow: 1.5px 1.5px 1px rgb(44, 44, 44);
+    cursor: pointer;
 }
 
 .instrumentals{
@@ -224,6 +241,7 @@
     -webkit-appearance: none;
     /* box-shadow: 2px 2px 1px lightgray; */
     box-shadow: 3px 3px 2px rgb(44, 44, 44);
+    cursor: pointer;
 }
 
 select > option{
@@ -250,6 +268,7 @@ select > option{
     color: bisque;
     -webkit-appearance: none;
     box-shadow: 3px 3px 2px rgb(44, 44, 44);
+    cursor: pointer;
 }
 
 .playboth{
@@ -273,22 +292,14 @@ select > option{
     color: bisque;
     -webkit-appearance: none;
     box-shadow: 3px 3px 2px rgb(44, 44, 44);
-    /* position: absolute;
-    top: 8%;
-    border-radius: 10px;
-    box-shadow: 1.5px 1.5px 1px rgb(44, 44, 44);
-    background-color: lightgray;
-    padding: 4px, 10px, 4px, 10px;
-    border-width: 2px;
-    font-family: "Trebuchet MS", "sans-serif";
-    font-weight: bold; */
+    cursor: pointer;
 }
 
 .matchButton{
     position: absolute;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    cursor: pointer;
     top: 92%;
     width: 15%;
     border-radius: 3px;
@@ -307,8 +318,73 @@ select > option{
     box-shadow: 3px 3px 2px rgb(44, 44, 44);
 }
 
-/* .thumb{
-    background: white;
-} */
+.popup button{
+    position: absolute;
+    border-radius: 10px;
+    top: -7.5%;
+    left: 92%;
+    background-color: bisque;
+    font-family: "Trebuchet MS", "sans-serif";
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 0.5px rgb(44, 44, 44);
+}
 
+/* popup inspired by https://www.youtube.com/watch?v=iE_6pQ3RlZU */
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+}
 
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: bisque;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px rgb(44, 44, 44);
+}
+
+.popup .close-button {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 28px;
+    height: 28px;
+    background: black;
+    color: bisque;
+    font-size: 25px;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.popup.active .content{
+    transition:all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+/* popup inspired by https://www.youtube.com/watch?v=iE_6pQ3RlZU */
+
+.content h1{
+    font-family: "Trebuchet MS", "sans-serif";
+    font-weight: bold;
+    text-align: center;
+}
+
+.content p{
+    font-family: "Trebuchet MS", "sans-serif";
+    text-align: center;
+}

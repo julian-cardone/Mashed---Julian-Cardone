@@ -26,6 +26,34 @@
   </div>
 
   <div class ="middle">
+
+    <script>
+      function togglePopup(){
+        document.getElementById("popup1").classList.toggle("active");
+      }
+    </script>
+
+<!-- ^^^^^^^ inspired by: https://www.youtube.com/watch?v=iE_6pQ3RlZU -->
+    <div class="popup"id="popup1">
+      <button onclick="togglePopup()">Instructions</button>
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-button" onclick="togglePopup()">✖</div>
+        <h1>Instructions</h1>
+        <br>
+        <p>Welcome to Mashed!
+          This program mashes up songs.
+          Select a song from the instrumental list, and one from the vocal list.
+          You are able to play each audio individually and change their beats per minute.
+          Once you are ready to mash, press the 'Match BPMs!' button. This will link
+          the two songs, allowing you to easily change their speed using the vocal slider
+          (on the right side).
+          If you run into any issues simply refresh the page. Enjoy!
+        </p>
+      </div>
+    </div>
+    <!-- ^^^^^^^ inspired by: https://www.youtube.com/watch?v=iE_6pQ3RlZU -->
+
     <select class="instrumentals">
       <option selected disabled hidden>Select Instrumental</option>
       <option data-bpm="127.04"value="levels">Levels - Avicii</option>
