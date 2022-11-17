@@ -9,23 +9,27 @@ Functionality & MVPs:
 In Mashed, users are able to:
 
 - select from a list of popular songs, instrumental
-    ![alt text](images/songs.png)
 - select from a list of popular songs, vocals
-- be able to edit each audio track in various ways
-- overlay the audio to create a mashup
-- download their finished product!
+    ![alt text](images/songs.png)
+- be able to edit the tempo of each audio track. This can be done individually or synchronously though the 'Match BPMs' button. This is accomplished through creating a interval to constantly update the bpms of the instrumental song (the tempo changes as the user changes the vocal BPMs).
+    ![alt text](images/beatmatch.png)
+- overlay the audio to create a mashup. The 'playboth' button plays both of the audio tracks at the same time in order to overlay the songs. 
+    ![alt text](images/playboth.png)
+- cool background lights!! this is accomplished by creating a color randomizer to display different colors on the beat.
+    ![alt text](images/colors.png)
+
 
 In addition, this project will include the following:
 
 - instructions
 - a readme
-- a user-friendly a nice looking interface
 
 
 Technologies, Libraries, APIs:
-The API and libraries I will use are:
 
 - Web Audio API
+- webpack
+- npm
 
 
 Implementation Timeline:
@@ -38,7 +42,7 @@ Monday:
 Tuesday:
 - be able to overlay the audio tracks and edit them by the end of the day. 
 Wednesday
-- be able to download the finished mashups. work on the interface
+- work on the interface
 - finishing touches on the interface. if there is time, implement bonus features
 Thursday Morning
 - adjust readme if necessary. Deploy the finished product!
@@ -50,3 +54,4 @@ I have lots of plans for bonus features for this app, including but not limited 
 - the ability to further edit audio tracks 
 - instruments and samples to be added to tracks
 - an interface to manage different parts of the track
+- ability to download your created mashups
