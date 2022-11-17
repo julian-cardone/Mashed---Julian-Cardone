@@ -32,7 +32,7 @@ class PlayBoth{
                     clearInterval(id);
                     this.middle.style.background = "gray";
                 }
-            }, ((60/(this.instBPM.innerHTML))*1000)+20);
+            }, ((60/(this.instBPM.innerHTML))*1000)-100);
         } else {
             this.middle.style.background = "gray";
             this.label.style.color = "black";
